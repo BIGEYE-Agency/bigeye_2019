@@ -1,0 +1,8 @@
+context:
+  -
+    is_single: true
+menu: {  }
+language: {  }
+post: {  }
+taxonomy: {  }
+archive: {  }

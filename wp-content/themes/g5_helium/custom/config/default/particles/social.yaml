@@ -1,0 +1,37 @@
+enabled: '1'
+css:
+  class: ''
+title: ''
+target: _blank
+display: both
+items:
+  -
+    icon: 'fa fa-twitter fa-fw fa-lg'
+    text: Twitter
+    title: ''
+    link: '#'
+    name: Twitter
+  -
+    icon: 'fa fa-dribbble fa-lg'
+    text: Dribbble
+    title: ''
+    link: '#'
+    name: Dribble
+  -
+    icon: 'fa fa-facebook fa-fw fa-lg'
+    text: Facebook
+    title: ''
+    link: '#'
+    name: Facebook
+  -
+    icon: 'fa fa-instagram fa-lg'
+    text: Instagram
+    title: ''
+    link: '#'
+    name: Instagram
+  -
+    icon: 'fa fa-linkedin fa-lg'
+    text: LinkedIn
+    title: ''
+    link: ''
+    name: LinkedIn

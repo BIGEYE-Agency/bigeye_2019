@@ -1,0 +1,154 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1561127808
+layout:
+  /navigation/:
+    -
+      - system-messages-7972
+    -
+      - 'logo-9608 20'
+      - 'menu-6409 80'
+  /header/: {  }
+  /intro/: {  }
+  /features/: {  }
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25':
+          -
+            - position-position-4734
+      -
+        'mainbar 50':
+          -
+            - system-content-1587
+      -
+        'sidebar 25':
+          -
+            - position-position-3949
+  /footer/:
+    -
+      - 'custom-5174 25'
+      - 'custom-3625 25'
+      - 'custom-9071 25'
+      - 'social-5159 25'
+  offcanvas:
+    -
+      - custom-1274
+    -
+      - 'custom-4279 37'
+      - 'mobile-menu-5697 63'
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      position: g-offcanvas-right
+      class: ''
+      extra: {  }
+      swipe: '0'
+      css3animation: '0'
+content:
+  logo-9608:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://2019/08/bigeye-logo-small.svg'
+      height: 40px
+  menu-6409:
+    attributes:
+      menu: primary
+  position-position-4734:
+    title: Aside
+    attributes:
+      key: aside
+  position-position-3949:
+    title: Sidebar
+    attributes:
+      key: sidebar
+  custom-5174:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"footer-logo\">\n<img src=\"https://htcstaging.space/bigeye_dev/wp-content/uploads/2019/08/footer-logo.svg\" />\n</div>\n<div>\n<p>\nReaching the right people, in the \nright place, at the right time.®\n</p>\n<p>© 2019 BIGEYE. All rights reserved.\nPrivacy • Site Map</p>\n</div>"
+  custom-3625:
+    title: 'Custom HTML'
+    attributes:
+      html: "<h2>Headquarters:</h2>\n<p class=\"mobile-hide address\"><a href=\"https://www.google.com/maps/place/3203+Lawton+Rd+2nd+Floor,+Orlando,+FL+32803,+USA/@28.5607665,-81.3446655,17z/data=!3m1!4b1!4m5!3m4!1s0x88e77ab576e0df8d:0xec5cba803183ef5c!8m2!3d28.5607665!4d-81.3424768\" target=\"_blank\">3203 Lawton Road, 2nd Floor\nOrlando, FL 32803</a></p>\n<p><strong>407.839.8599</strong></p>\n<p><a href=\"mailto:newbiz@bigeyeagency.com\"><strong>newbiz@bigeyeagency.com</strong></a></p>"
+    block:
+      id: contact
+  custom-9071:
+    title: 'Custom HTML'
+    attributes:
+      html: "<h2>Website:</h2>\n<ul>\n<li><a href=\"audience\">Audience</a></li>\n<li><a href=\"branding\">Branding</a></li>\n<li><a href=\"creative-production\">Creative\x03& Production</a></li>\n<li><a href=\"media-analytics\">Media\x03& Analytics</a></li>\n</ul>"
+  social-5159:
+    attributes:
+      title: 'Social:'
+    block:
+      id: social
+  custom-1274:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div id=\"mobile-logo\">            <a href=\"https://htcstaging.space/bigeye_dev\" target=\"_self\" title=\"\" aria-label=\"\" rel=\"home\" class=\"g-logo g-logo-helium\">\n                        <img src=\"https://htcstaging.space/bigeye_dev/wp-content/uploads/2019/08/bigeye-logo-small-white.svg\" style=\"max-height: 40px\" alt=\"\">\n            </a>\n            </div><div class=\"g-offcanvas-toggle\" data-offcanvas-toggle=\"\" aria-controls=\"g-offcanvas\" aria-expanded=\"false\"></div>"
+  custom-4279:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div id=\"mobile-left\">\n<div>\n<h3>- Company:</h3>\n<p class=\"address\"><a href=\"https://www.google.com/maps/place/3203+Lawton+Rd+2nd+Floor,+Orlando,+FL+32803,+USA/@28.5607665,-81.3446655,17z/data=!3m1!4b1!4m5!3m4!1s0x88e77ab576e0df8d:0xec5cba803183ef5c!8m2!3d28.5607665!4d-81.3424768\" target=\"_blank\">\n<strong>Bigeye</strong><br>\n3203 Lawton Road, 2nd Floor\nOrlando, FL 32803</a>\n</p>\n<p><strong>407.839.8599</strong></p>\n<p><strong><a href=\"mailto:newbiz@bigeyeagency.com\">newbiz@bigeyeagency.com</a></strong></p>\n</div>\n</div>"
+  mobile-menu-5697:
+    block:
+      id: mobile-right

@@ -1,0 +1,25 @@
+[0.0050] Info: WP_Query results written to log
+[0.0002] Registered sizes: ["thumbnail","medium","medium_large","large","post-thumbnail","full"]
+[0.0003] Meta indexed so far: 1 / 713
+[0.0007] Sample meta:
+{"width":1000,"height":667,"file":"2019\/06\/ips-to-jumpstarting-your-business\u2019-holiday-marketing-efforts-2.jpg","sizes":{"thumbnail":{"file":"ips-to-jumpstarting-your-business\u2019-holiday-marketing-efforts-2-150x150.jpg","width":150,"height":150,"mime-type":"image\/jpeg"},"medium":{"file":"ips-to-jumpstarting-your-business\u2019-holiday-marketing-efforts-2-300x200.jpg","width":300,"height":200,"mime-type":"image\/jpeg"},"medium_large":{"file":"ips-to-jumpstarting-your-business\u2019-holiday-marketing-efforts-2-768x512.jpg","width":768,"height":512,"mime-type":"image\/jpeg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}}
+[7.5374] Meta indexed so far: 713 / 713
+[0.0002] Meta indexed so far: 101 / 713
+[0.0001] Meta indexed so far: 201 / 713
+[0.0001] Meta indexed so far: 301 / 713
+[0.0001] Meta indexed so far: 401 / 713
+[0.0002] Meta indexed so far: 501 / 713
+[0.0001] Meta indexed so far: 601 / 713
+[0.0001] Meta indexed so far: 701 / 713
+[0.0039] Meta indexed so far: 713 / 713
+[0.0089] Info: Valid and Invalid meta results written to log
+[0.0171] Info: Loaded attachments to memory [38 mb]
+[0.0718] Info: 4055 Images found [40 mb]
+[0.2431] Info: 0 Invalid images found [40 mb]
+[0.2556] Info: Retrieved attachment images from DB [40 mb]
+[0.3044] Info: Backup meta results written to log [40 mb]
+[0.0000] Posts checked for used images 1/35
+[0.0240] Info: Invalid post image meta results written to log
+Warning: skipping script index because of too many image files
+[0.0001] Warning: skipping attachment index because of too many image files
+[0.0002] Info: Unreferenced image file results written to log
