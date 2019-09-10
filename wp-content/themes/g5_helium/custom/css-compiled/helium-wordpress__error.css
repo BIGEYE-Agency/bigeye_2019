@@ -153,7 +153,6 @@ legend small {
   border-radius: 4px;
 }
 @media only all and (max-width: 47.938rem) {
-  /* line 25, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   .pagination ul.pagination-list, .page-links ul.pagination-list {
     box-shadow: none;
   }

@@ -123,18 +123,23 @@ h1, h2, h3, h4{
 	line-height: 1em;
 	font-weight: 800;
 	//font-size: 60px;
-	font-size: 4.8vw;
+	font-size: 96px;
 	font-family: "MarkOT-Bold", sans-serif;
 	letter-spacing: -0.05em;
 	word-break: normal;
 	@media(min-width: 1980px){
 		font-size: 92px;
 	}
-	@media(max-width: 1365px){
-		//font-size: 65px;
+
+	@media(max-width: 1480px){
+		font-size: 65px;
+	}
+	@media(max-width: 1024px){
+		font-size: 52px;
 	}
 	@media(max-width: 767px){
-		font-size: 50px;
+		// font-size: 50px;
+		font-size: 35px;
 	}
 	
 }
@@ -145,7 +150,7 @@ h4{
 
 p{
 	line-height: 1.8em;
-	font-size: 1.1vw;
+	font-size: 12pt;
 	@media(min-width: 1980px){
 		font-size: 21px;
 	}
@@ -206,6 +211,9 @@ input[type="submit"]{
 	background: url('wp-content/uploads/2019/09/submit-right-arrow.svg') no-repeat 90% 50% #000;
 	background-size: 7px;
 	padding-right: 40px;
+	&:focus{
+		outline:none;
+	}
 }
 
 .uk-button{
@@ -313,7 +321,7 @@ ul{
 	
 	h3{
 		font-weight: 700;
-		font-size: 16px;
+		font-size: 20px;
 		color: #303030;
 		margin-bottom: 40px;
 		width: 100%;
@@ -331,12 +339,14 @@ ul{
 			margin-bottom: 80px;
 			a{
 				display: block;
-				font-family: "MarkOT-Light", sans-serif;
+				font-family: "MarkOT-Bold", sans-serif;
+				font-size:20px;
 				span{
 					&:first-child{
-						width: 30px;
+						width: 40px;
 						display: inline-block;
 						text-align: left;
+						height:32px;
 					}
 				}
 			}
@@ -367,7 +377,8 @@ ul{
 					font-size: 50px;
 					font-weight: 900;
 					line-height: 1;
-					padding: 4px !important;
+					padding: 6px !important;
+					// padding: 4px !important;
 				}
 				&.active{
 					background: #fff !important;
@@ -747,6 +758,11 @@ body.white-nav{
 		width: 130px;
 		height: 130px;
 	}
+	+div.bg-black.custom_optimization{
+		@media(max-width: 959px){
+			padding-top: 20vw;
+		}
+	}
 }
 
 .experts{
@@ -757,6 +773,16 @@ body.white-nav{
 		background: none;
 		padding-bottom: 100px !important;
 	}
+
+	.wp-block-column 	{
+		&:last-child{
+			@media(max-width: 959px){
+				padding-top: 80px;
+			}
+		}
+		
+	}
+
 }
 
 .exceeding-expectations{
@@ -782,6 +808,7 @@ blockquote{
 	p{
 		//font-size: 70px;
 		font-size: 4.5vw;
+		// font-size: 117px;
 		line-height: 1em;
 		font-family: "MarkOT-Bold", sans-serif;
 		letter-spacing: -0.05em;
@@ -876,6 +903,7 @@ blockquote.bg-black{
 		float: right;
 		width: 100px;
 		height: 100px;
+		margin-left:  15px !important;
 	}
 }
 
@@ -1061,7 +1089,11 @@ h2.be-section.bg-black{
 		padding: 3%;
 		&:first-child{
 			padding-left: 0;
+			@media(max-width:959px){
+				padding-bottom: 80px;
+			}
 		}
+		
 	}
 	
 	&.bg-black{
@@ -1165,6 +1197,7 @@ h2.be-section.bg-black{
 					}
 				}
 			}
+		
 		}
 	}
 	
@@ -1216,6 +1249,25 @@ h2.be-section.bg-black{
 	}
 }
 
+body.agency{
+	.be-section{
+		&.flush-left{
+			&.wp-block-columns{
+				&.custom_white-right{
+					>.wp-block-column{ 
+						&:last-child{
+							flex-basis: 55%;
+							@media(max-width: 959px){
+								flex-basis: 100%;
+								padding-left: 10%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 .bg-black{
 	background: #000;
 	*{
@@ -1262,12 +1314,20 @@ h2.be-section.bg-black{
 		 .wp-block-column:first-child{
 			flex-basis: 32%;
 			align-self: center;
+
+			@media(max-width:768px){
+				flex-basis: 60%;
+			}
 		}
 		 .wp-block-column:last-child{
 			flex-basis: 100%;
 			align-self: center;
 			margin-left: 30px;
 			padding-right: 10px;
+
+			@media(max-width:768px){
+				margin-left: 20px;
+			}
 		}
 	}
 	
@@ -1360,6 +1420,8 @@ h2.be-section.bg-black{
 			border: none;
 			border-bottom: 2px solid #000;
 			border-radius: 0;
+			padding-left: 0px;
+			font-size: 24px;
 			&:hover{
 				box-shadow: none;
 			}
@@ -1432,8 +1494,9 @@ h2.be-section.bg-black{
 	}
 	
 	p{
-		margin-bottom: 13px;
+		margin-bottom: 35px;
 		font-size: 16px;
+		line-height: 22.9px;
 	}
 	
 	li{
@@ -1444,7 +1507,11 @@ h2.be-section.bg-black{
 		text-decoration: underline;
 		color: #999;
 	}
-	
+  	.footer-cnt {
+		p:first-of-type{
+			margin-bottom: 70px;
+		}
+  	}  
 	.address{
 			a{
 				&:hover{
@@ -1452,7 +1519,7 @@ h2.be-section.bg-black{
 					text-decoration: none;
 				}
 			}
-		}
+	}
 		
 	.footer-logo{
 		height: 40px;
@@ -1529,6 +1596,13 @@ h2.be-section.bg-black{
 			width: 100% !important;
 			//height: 800px !important;
 			height: 45vw !important;
+
+			@media(max-width:768px){
+				height: 56vw !important;
+			}
+		}
+		@media(max-width:768px){
+			padding:0 !important
 		}
 }
 
@@ -1844,6 +1918,9 @@ body.approach{
 			width: 100%;
 			height: 57vw !important;
 		}
+		@media(max-width:768px){
+			padding: 0 !important;
+		}
 	}
 	
 }
@@ -1900,7 +1977,9 @@ body.agency{
 	
 	.custom_client-logos{
 		img{
-			width: 100%;
+			width: auto;
+			margin: 0 auto;
+			display: block;
 		}
 	}
 	
@@ -2121,6 +2200,8 @@ body.outline-single_post{
 					font-family: "MarkOT-Light", sans-serif;
 					color: #000;
 					font-size: 16px;
+					cursor:default;
+					pointer-events:none;
 				}
 				i{
 					display: none;
@@ -2186,7 +2267,8 @@ body.careers{
 	.custom_intro-block{
 		.wp-block-column{
 			&:first-child{
-				padding-top: 15vw;
+				// padding-top: 15vw;
+				padding-top: 3vw;
 			}
 			&:last-child{
 				max-width: 600px;
@@ -2240,6 +2322,12 @@ body.cs-page{
 			}
 			&:last-child{
 				flex-basis: 70%;
+			}
+
+			h2 {
+				+p {
+					max-width: 60%;
+				}
 			}
 		}
 		h4{
@@ -2506,6 +2594,16 @@ body.insights{
 			.uk-article-meta{
 				font-family: "MarkOT-Light", sans-serif;
 			}
+
+			.uk-button{
+				&:hover , &:active , &:focus{
+					background-color: transparent;
+					padding-left: 10px;
+					transition: all 0.3s;
+					box-shadow: none
+				}
+
+			}
 			
 		}
 	}
@@ -2586,6 +2684,7 @@ body.contact{
 	input[type="submit"]{
 		float: right;
 		margin-top: 20px;
+		outline: none;
 	}
 	
 	.wpcf7-select{
